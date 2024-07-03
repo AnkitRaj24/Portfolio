@@ -1,0 +1,30 @@
+#headerPic{
+    width:100%;
+    height:910px;
+    overflow: hidden;
+    
+}
+.image-container {
+    position: relative;
+    width: 100%; /* set your desired width */
+    height:600px; /* set your desired height */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 253, 253, 0), rgba(0, 0, 0, 0)); /* your gradient */
+    pointer-events: none; /* allows interactions with the image */
+  }
